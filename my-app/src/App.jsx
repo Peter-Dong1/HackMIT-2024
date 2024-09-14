@@ -9,6 +9,7 @@ function App() {
       {tasks?.map(({ _id, text }) => (
         <div key={_id}>{text}</div>
       ))}
+      <div>hello test</div>
     </div>
   );
 }
