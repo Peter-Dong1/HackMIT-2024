@@ -1,0 +1,1 @@
+chatGPTAPI = "sk-Z7MQnEBTlDiTQGwA5xTbaHnl-gmGebN9VcQfS0HmqpT3BlbkFJ3B80zdG6cG5yvaiw-k-UAliRmi6VBXWnp7jjMXuP4A"
