@@ -1,6 +1,10 @@
 import './App.css';
 
 export default function App() {
+  const openPage = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="App">
       <header style={headerWrapperStyle}>
@@ -8,70 +12,23 @@ export default function App() {
       </header>
 
       <div style={containerStyle}>
-        {/* Prettier buttons and open in new tab */}
-        <a href="http://localhost:3000/page1" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Linear Algebra</button>
-        </a>
-
-        <a href="http://localhost:3000/page1" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>C#</button>
-        </a>
-
-        <a href="http://localhost:3000/page1" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Data Structure and Algorithm</button>
-        </a>
-
-        <a href="http://localhost:3000/page1" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>System Design</button>
-        </a>
-
-        <a href="http://localhost:3000/page2" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Multivariable Calculus</button>
-        </a>
-
-        <a href="http://localhost:3000/page3" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Single Variable Calculus</button>
-        </a>
-
-        <a href="http://localhost:3000/page4" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Topology</button>
-        </a>
-
-        <a href="http://localhost:3000/page5" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Algebra 1</button>
-        </a>
-
-        <a href="http://localhost:3000/page6" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Organic Chemistry</button>
-        </a>
-
-        <a href="http://localhost:3000/page7" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Classical Mechanics</button>
-        </a>
-
-        <a href="http://localhost:3000/page8" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Quantum Mechanics</button>
-        </a>
-
-        <a href="http://localhost:3000/page9" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Electricity and Magnetism</button>
-        </a>
-
-        <a href="http://localhost:3000/page10" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>General Chemistry</button>
-        </a>
-
-        <a href="http://localhost:3000/page11" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Biology</button>
-        </a>
-
-        <a href="http://localhost:3000/page12" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Java</button>
-        </a>
-
-        <a href="http://localhost:3000/page13" target="_blank" rel="noopener noreferrer">
-          <button style={buttonStyle}>Python</button>
-        </a>
+        {/* Buttons to open pages in new tabs */}
+        <button style={buttonStyle} onClick={() => openPage('/page1.html')}>Linear Algebra</button>
+        <button style={buttonStyle} onClick={() => openPage('/page2.html')}>C#</button>
+        <button style={buttonStyle} onClick={() => openPage('/page3.html')}>Data Structure and Algorithm</button>
+        <button style={buttonStyle} onClick={() => openPage('/page4.html')}>System Design</button>
+        <button style={buttonStyle} onClick={() => openPage('/page5.html')}>Multivariable Calculus</button>
+        <button style={buttonStyle} onClick={() => openPage('/page6.html')}>Single Variable Calculus</button>
+        <button style={buttonStyle} onClick={() => openPage('/page7.html')}>Topology</button>
+        <button style={buttonStyle} onClick={() => openPage('/page8.html')}>Algebra 1</button>
+        <button style={buttonStyle} onClick={() => openPage('/page9.html')}>Organic Chemistry</button>
+        <button style={buttonStyle} onClick={() => openPage('/page10.html')}>Classical Mechanics</button>
+        <button style={buttonStyle} onClick={() => openPage('/page11.html')}>Quantum Mechanics</button>
+        <button style={buttonStyle} onClick={() => openPage('/page12.html')}>Electricity and Magnetism</button>
+        <button style={buttonStyle} onClick={() => openPage('/page13.html')}>General Chemistry</button>
+        <button style={buttonStyle} onClick={() => openPage('/page14.html')}>Biology</button>
+        <button style={buttonStyle} onClick={() => openPage('/page15.html')}>Java</button>
+        <button style={buttonStyle} onClick={() => openPage('/page16.html')}>Python</button>
       </div>
 
       <footer className="App-footer">
@@ -83,19 +40,19 @@ export default function App() {
 
 // Header wrapper with transparent background
 const headerWrapperStyle = {
-  backgroundColor: 'transparent', // Transparent background
-  padding: '20px',                // Reduced padding for the title section
+  backgroundColor: 'transparent',  // Transparent background
+  padding: '30px 20px',            // Adjusted padding to move title lower
   textAlign: 'center',
-  marginBottom: '10px',           // Reduced gap between title and buttons
+  marginBottom: '20px',            // Reduced gap between title and buttons
 };
 
 // Title style with white color and transparent background
 const titleStyle = {
-  color: 'white',                 // White color for the title
-  backgroundColor: 'transparent', // Transparent background
-  margin: 0,                      // Remove any default margin
-  fontSize: '48px',               // You can adjust the font size if needed
-  padding: '3px 0',
+  color: 'white',                  // White color for the title
+  backgroundColor: 'transparent',  // Transparent background
+  margin: 0,                       // Remove any default margin
+  fontSize: '48px',                // Adjust the font size if needed
+  padding: '5px 0',
 };
 
 // Container style to distribute buttons evenly across the page
@@ -104,8 +61,8 @@ const containerStyle = {
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
   alignItems: 'center',
-  gap: '101px',                    // Slightly reduced gap between buttons
-  padding: '55px',                // Reduced padding around the buttons
+  gap: '90px',                     // Reduced gap between buttons
+  padding: '50px',                // Reduced padding around the buttons
   backgroundColor: 'white',       // Ensures the body is white
 };
 
